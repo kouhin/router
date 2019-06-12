@@ -1,6 +1,28 @@
 let getLocation = source => {
+  const { location } = source;
+  const {
+    href,
+    origin,
+    protocol,
+    host,
+    hostname,
+    port,
+    pathname,
+    search,
+    hash,
+    ...restProps
+  } = location;
   return {
-    ...source.location,
+    ...restProps,
+    href,
+    origin,
+    protocol,
+    host,
+    hostname,
+    port,
+    pathname,
+    search,
+    hash,
     state: source.history.state,
     key: (source.history.state && source.history.state.key) || "initial"
   };

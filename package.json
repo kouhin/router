@@ -1,5 +1,5 @@
 {
-  "name": "@reach/router",
+  "name": "@kouhin/router",
   "version": "1.2.1",
   "description": "Next generation Routing for React.",
   "main": "index.js",
